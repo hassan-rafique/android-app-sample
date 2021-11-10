@@ -14,7 +14,8 @@ Layer that contains UI related stuff like Views and ViewModel etc
 
 Home                       |  Local                    |  Drawer                   |  Add Plant
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------
-![Screenshot_1632745063](/uploads/3c62a65ac0e9a7904a21fbce4a54f552/Screenshot_1632745063.png) | ![Screenshot_1632745131](/uploads/dd7a95d91f641a9cb4a0a83865661f5f/Screenshot_1632745131.png) | ![Screenshot_1632745068](/uploads/05eb837f614e2070e4a47c6117a0cc24/Screenshot_1632745068.png) | ![Screenshot_1632745161](/uploads/3a028613afc33562af28d23b80f6387a/Screenshot_1632745161.png)
+![Alt text](/screenshots/Screenshot_1632739577.png?raw=true "Home screen") | ![Alt text](/screenshots/Screenshot_1632739639.png?raw=true "Room database") | ![Alt text](/screenshots/Screenshot_1632739582.png?raw=true "Drawer Menu") | ![Alt text](/screenshots/Screenshot_1632745161.png?raw=true "Plant")
+
 ## Build With
 This project follow MVVM base Clean Architecture. The following tools and technologies have been used to develop:
 
