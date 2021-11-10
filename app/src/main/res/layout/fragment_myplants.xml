@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.ui.myplants.MyPlantsFragment">
+
+    <data>
+
+        <variable
+            name="itemCLickListener"
+            type="com.devcrew.baseproject.presentation.ui.myplants.MyPlantsFragment.OnPlantItemClickListener" />
+
+        <variable
+            name="onItemViewClick"
+            type="com.devcrew.baseproject.presentation.ui.myplants.MyPlantsFragment.OnPlantItemViewClickListener" />
+
+        <variable
+            name="viewModel"
+            type="com.devcrew.baseproject.presentation.ui.myplants.MyPlantsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_12sdp"
+            app:itemClickListener="@{itemCLickListener}"
+            app:itemLayout="@{@layout/item_my_plant}"
+            app:itemsList="@{viewModel.myPlants}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:onItemViewClick="@{onItemViewClick}"
+            tools:listitem="@layout/item_my_plant" />
+
+        <TextView
+            android:id="@+id/txt_err"
+            style="@style/Body1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/str_empty_list" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:contentDescription="@string/str_add_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:backgroundTint="@color/color_primary"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
